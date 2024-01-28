@@ -2,7 +2,7 @@
 import subprocess
 
 
-# класс отвечающий за отображение информации о последних коммитах
+# класс отвечающий за отображение информации о последнем коммите
 class SimpleGit:
     # выбор директории
     def __init__(self, git_dir='.'):
@@ -23,4 +23,4 @@ class SimpleGit:
 # корневая директория
 git = SimpleGit('.')
 commit_info = git.show()
-print(commit_info)
+print(f'Информация о последнем коммите: \n\n{commit_info}')
